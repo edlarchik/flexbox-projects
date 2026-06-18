@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2e3a;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    gap: 20px;
+    width: 1000px;
+    height: 400px;
+    background-color: gray;
+    padding: 20px;
+}
+
+.orange-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #e68862;
+}
+
+.green-top {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #67d4bf;
+}
+
+.red {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #e26d5c;
+}
+
+/* Включаем сетку внутри правого нижнего блока */
+.green-nested-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    background-color: #55a687;
+    padding: 15px;
+}
+
+.nested-mint {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: #61bfa2;
+}
+
+.nested-green {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #55a687;
+}
+
+.nested-orange {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #e9a268;
+}
